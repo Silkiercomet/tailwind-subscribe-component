@@ -1,0 +1,14 @@
+{
+  "name": "newsletter-sign-up-with-success-message-main",
+  "version": "1.0.0",
+  "description": "a card component with a form",
+  "main": "index.js",
+  "scripts": {
+    "test": "start test"
+  },
+  "author": "luis colina",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
