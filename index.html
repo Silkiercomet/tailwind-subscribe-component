@@ -27,8 +27,8 @@
       }
     </style>
   </head>
-  <body class="">
-    <main class="max-w-sm m-auto">
+  <body class="grid place-items-center">
+    <main class="max-w-sm">
       <figure class="w-100">
         <img
         class="w-100"
@@ -36,19 +36,19 @@
           alt="placeholder image"
         />
       </figure>
-      <div>
-        <h1 class="text-3xl font-bold">Stay updated!</h1>
+      <div class="grid p-4 gap-3">
+        <h1 class="text-4xl font-bold text-per-charcol">Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li class="flex align-middle gap-2"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Product discovery and building what matters</li>
-          <li class="flex align-middle gap-2"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Measuring to ensure updates are
+        <ul class="grid gap-3">
+          <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Product discovery and building what matters</li>
+          <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Measuring to ensure updates are
             a success</li>
-          <li class="flex align-middle gap-2"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>And much more!</li>
+          <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>And much more!</li>
         </ul>
-        <form class="flex flex-col gap-2 ">
-          <label for="email" class="mb-2">Email address</label>
-          <input class="p-2 border-gray-500" type="email" placeholder="introduce your email" id="email" />
-          <button class="bg-per-dark-grey text-white p-2 rounded-md">subscribe to monthly newsletter</button>
+        <form class="flex flex-col gap-1 my-2 ">
+          <label for="email" class="mb-2 font-bold text text-xs text-per-charcol">Email address</label>
+          <input class="p-2 border-2 border-slate-300 rounded-md" type="email" placeholder="introduce your email" id="email" />
+          <button class="bg-per-dark-grey text-white p-2 rounded-md mt-2">subscribe to monthly newsletter</button>
         </form>
       </div>
       <div class="hidden">
