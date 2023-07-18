@@ -21,43 +21,52 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right:0 ;
+        margin-inline:auto ;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
-  <body class="grid place-items-center">
-    <main class="max-w-sm">
-      <figure class="w-100">
-        <img
-        class="w-100"
-          src="assets/images/illustration-sign-up-mobile.svg"
-          alt="placeholder image"
-        />
-      </figure>
-      <div class="grid p-4 gap-3">
-        <h1 class="text-4xl font-bold text-per-charcol">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class="grid gap-3">
-          <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Product discovery and building what matters</li>
-          <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Measuring to ensure updates are
-            a success</li>
-          <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>And much more!</li>
-        </ul>
-        <form class="flex flex-col gap-1 my-2 ">
-          <label for="email" class="mb-2 font-bold text text-xs text-per-charcol">Email address</label>
-          <input class="p-2 border-2 border-slate-300 rounded-md" type="email" placeholder="introduce your email" id="email" />
-          <button class="bg-per-dark-grey text-white p-2 rounded-md mt-2">subscribe to monthly newsletter</button>
-        </form>
-      </div>
-      <div class="hidden">
+  <body class="relative grid place-items-center bg-per-dark-grey min-h-screen">
+    <main class="bg-white sm:rounded-xl">
+<div class="w-full sm:max-w-[740px] sm:flex sm:flex-row-reverse" id="first-stage">
+  <figure class="w-100 sm:max-w-[50%] sm:p-4 sm:min-h-max">
+    <img
+    class="w-full sm: h-full"
+      src="assets/images/illustration-sign-up-mobile.svg"
+      alt="placeholder image"
+      id="illustration"
+    />
+  </figure>
+  <div class="grid p-4 gap-3 sm:max-w-[50%] sm:gap-2 sm:ml-6 sm:place-items-center">
+    <h1 class="text-4xl font-bold text-per-dark-grey sm:text-5xl">Stay updated!</h1>
+    <p class="ml-4">Join 60,000+ product managers receiving monthly updates on:</p>
+    <ul class="grid gap-3">
+      <li class="flex align-middle gap-2 max-w-[35ch] sm:w-full"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Product discovery and building what matters</li>
+      <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>Measuring to ensure updates are
+        a success</li>
+      <li class="flex align-middle gap-2 max-w-[35ch]"><i><img src="assets/images/icon-list.svg" alt="check icon" /></i>And much more!</li>
+    </ul>
+    <form class="flex flex-col gap-1 my-2 sm:w-90" id="form">
+      <label for="email" class="mb-2 font-bold text text-xs text-per-charcol">Email address</label>
+      <input class="p-2 border-2 border-slate-300 rounded-md" type="email" placeholder="introduce your email" id="email" name="email" />
+      <button type="submit" class="bg-per-dark-grey text-white p-2 rounded-md mt-2">subscribe to monthly newsletter</button>
+    </form>
+  </div>
+</div>
+      <div id="confirmation" class="hidden h-[100vh] max-w-fit sm:max-w-sm sm:h-[100%] flex flex-col align-middle justify-center max-w-[400px] gap-5 p-6 rounded-xl drop-shadow-2xl">
+
         <figure><img src="assets/images/icon-success.svg" alt=""></figure>
-        <h2>Thanks for subscribing!</h2>
-        <p>A confirmation email has been sent to
+        <h2 class="text-5xl font-bold text-per-dark-grey">Thanks for subscribing!</h2>
+        <p id="contentEmail">A confirmation email has been sent to
           ash@loremcompany.com. Please open it and click the button inside to confirm
           your subscription.</p>
-          <button>Dismiss message</button>
+          <button id="back" class="bg-per-tomato text-white p-4 rounded-md">Dismiss message</button>
       </div>
      
 
@@ -79,5 +88,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
